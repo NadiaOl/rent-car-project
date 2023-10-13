@@ -1,0 +1,11 @@
+.filterContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 859px;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.mileageWrap {
+    display: flex;
+}

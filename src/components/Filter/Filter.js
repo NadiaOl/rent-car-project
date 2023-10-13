@@ -1,52 +1,53 @@
-// import { useDispatch, useSelector } from "react-redux";
-// import { setFilter } from "redux/filterReducer";
-// import { selectFilter } from "redux/selectors";
-// import css from './Filter.module.css';
-
+import css from './Filter.module.css';
 export const Filter = () => {
-    // const filter = useSelector(selectFilter)
-    // const dispatch = useDispatch();
+    const submit=()=>{
 
-    // const onChangeFilter = (event) => {
-    //     dispatch(setFilter(event.target.value.toLowerCase()))
-    // }
-
+    }
     return (
-        <div>
+        <div className={css.filterContainer}>
             <label >Car brand
-                <select>
-                    <option> Enter the text</option>
-                    <option>Aston Martin</option>
-                    <option>Audi</option>
-                    <option>BMW</option>
-                    <option>Buick</option>
-                    <option>Chevrolet</option>
-                    <option>Chrysler</option>
-                    <option>GMC</option>
-                    <option>HUMMER</option>
-                    <option>Hyundai</option>
-                    <option>Kia</option>
-                    <option>Lamborghini</option>
-                    <option>Land</option>
-                    <option>Lincoln</option>
-                    <option>Mercedes-Benz</option>
-                    <option>MINI</option>
-                    <option>Mitsubishi</option>
-                    <option>Pontiac</option>
-                    <option>Subaru</option>
-                    <option>Volvo</option>
-                </select>
+<div className={css.mileageWrap}>
+                    <select>
+                        <option> Enter the text</option>
+                        <option>Aston Martin</option>
+                        <option>Audi</option>
+                        <option>BMW</option>
+                        <option>Bentley</option>
+                        <option>Buick</option>
+                        <option>Chevrolet</option>
+                        <option>Chrysler</option>
+                        <option>Ford</option>
+                        <option>GMC</option>
+                        <option>HUMMER</option>
+                        <option>Hyundai</option>
+                        <option>Kia</option>
+                        <option>Lamborghini</option>
+                        <option>Land Rover</option>
+                        <option>Lincoln</option>
+                        <option>Mercedes</option>
+                        <option>MINI</option>
+                        <option>Mitsubishi</option>
+                        <option>Pontiac</option>
+                        <option>Porche</option>
+                        <option>Subaru</option>
+                        <option>Toyota</option>
+                        <option>Volvo</option>
+                    </select>
+</div>
             </label>
             <label>Price/ 1 hour
-                <input placeholder='To $'>
+                <input className={css.mileageWrap}placeholder='To $'>
                 </input>
             </label>
-            <label>Сar mileage / km
-                <input placeholder='From'>
-                </input>
-                <input placeholder='To'>
-                </input>
+            <label >Сar mileage / km
+           <div className={css.mileageWrap}>
+                    <input placeholder='From'>
+                    </input>
+                    <input placeholder='To'>
+                    </input>
+           </div>
             </label>
+            <button type="submit" onClick={submit}>Search</button>
         </div>
     )
 }
