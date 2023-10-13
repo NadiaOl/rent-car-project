@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchCars, fetchLPagination } from './operations';
+import { fetchCars, fetchLPagination, filterCars } from './operations';
 
 const initialState = {
   items: [],
@@ -46,7 +46,10 @@ const carsSlice = createSlice({
       .addCase(fetchCars.fulfilled, handleSuccess)
       .addCase(fetchLPagination.pending, handlePending)
       .addCase(fetchLPagination.fulfilled, handleSuccessPagination)
-      .addCase(fetchLPagination.rejected, handleRejected);
+      .addCase(fetchLPagination.rejected, handleRejected)
+      .addCase(filterCars.pending, handlePending)
+      .addCase(filterCars.rejected, handleRejected)
+      .addCase(filterCars.fulfilled, handleSuccess)
 
 }});
 

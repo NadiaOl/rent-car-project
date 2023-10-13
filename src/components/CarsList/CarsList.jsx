@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { fetchCars, fetchLPagination } from "redux/operations";
 
 import css from './CarsList.module.css';
+import { Filter } from "components/Filter/Filter";
 
 
 export const CarsList = () =>{ 
@@ -29,6 +30,7 @@ export const CarsList = () =>{
 
     return (
         <div className={css.container}>
+          <Filter/>
             {isLoading && <p>Loading...</p>}
             {error && <p>{error}</p>}
 

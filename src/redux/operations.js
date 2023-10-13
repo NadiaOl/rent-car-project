@@ -26,4 +26,15 @@ export const fetchCars = createAsyncThunk(
     }
   }
 );
+export const filterCars = createAsyncThunk(
+  'cars/fetchFiltered',
+  async (make, thunkAPI) => {
+    try {
+      const response = await axios.get(`?make=${make}`);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
 
