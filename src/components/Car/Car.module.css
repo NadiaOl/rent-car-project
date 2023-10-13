@@ -3,8 +3,11 @@
 }
 .carPhotoContainer {
     height: 267px;
+    background-color: #E6DBD2;
     background-image: url('https://img.freepik.com/premium-vector/car-icon-isolated-on-a-white-background_646737-2503.jpg');
+    background-blend-mode: multiply;
     background-size: contain;
+    border-radius: 14px;
     margin-bottom: 14px;
 
 }

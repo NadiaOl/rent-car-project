@@ -22,8 +22,9 @@
 
 .carPhotoContainer {
     height: 248px;
-background-color: rgba(18, 20, 23, 0.2);
+    background-color: #E6DBD2;
     margin-bottom: 14px;
+    border-radius: 14px;
 }
 
 .carPhoto {
