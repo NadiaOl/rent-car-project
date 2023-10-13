@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.carListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1275px;
+    margin-bottom: 100px;
+}
+
+.carContainer {
+height: 426px;
+width: 300px;
+}
+
+.btn {
+color: #3470FF;
+background-color: transparent;
+border: none;
+text-decoration: underline;
+margin-bottom: 100px;
+}
+
+.btn:hover, .btn:focus {
+    transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: #0B44CD;
+}

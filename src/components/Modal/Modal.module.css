@@ -1,0 +1,132 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px; 
+    border-radius: 14px;
+    width: 541px;
+    height: 620px;
+    overflow: auto;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 20, 23, 0.5);
+}
+
+.carPhotoContainer {
+    height: 248px;
+background-color: rgba(18, 20, 23, 0.2);
+    margin-bottom: 14px;
+}
+
+.carPhoto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+}
+.carMainDiscription {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 8px;
+    }
+.carInfo {
+    display: flex;
+    gap: 3px
+}
+.carSpan {
+    color: #3470FF;
+}
+.carDiscription {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: rgba(18, 20, 23, 50%);
+    margin-bottom: 4px;
+}
+.carDiscription > p,  .carDiscription > li {
+    border-right: 1px solid rgba(18, 20, 23, 50%);;
+    padding: 0 6px;
+}
+
+.carDiscription > p:last-child,  .carDiscription > li:last-child {
+    border-right: none
+}
+.carDiscription > p:first-child,  .carDiscription > li:first-child {
+    padding: 0 6px 0 0;
+}
+
+.textDescription {
+    font-size: 14px;
+    margin: 14px 0 24px 0;
+    font-weight: 400;
+}
+.carAccessories {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.carConditions{
+    margin: 24px 0 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+.carFunctionalitiesList {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.carFunctionalities {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 35px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carDiscriptionList {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 36px;
+}
+    
+.blueText {
+    color: #3470FF;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-left: 4px;
+}
+.confirmBtn {
+    color: #FFFFFF;
+    background-color: #0B44CD;
+    text-decoration: none;
+    padding: 12px 50px;
+    border-radius: 14px;
+    border: none;
+
+}
+
+.confirmBtn:hover, .confirmBtn:focus {
+    transition-property: background-color, box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #3470FF;
+    box-shadow: 0px 0px 12px 4px rgba(212,208,212,1);
+}
