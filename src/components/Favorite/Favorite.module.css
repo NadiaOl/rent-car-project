@@ -16,7 +16,7 @@
     justify-content: center;
     gap: 25px;
     max-width: 1275px;
-    margin-bottom: 100px;
+    height: 100%;
 }
 
 .carContainer {
