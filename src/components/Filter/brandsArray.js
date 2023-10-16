@@ -24,3 +24,7 @@ export const brands = [
     "Toyota",
     "Volvo",
   ];
+
+//   export const price = [
+
+//   ]
